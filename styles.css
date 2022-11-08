@@ -1,0 +1,64 @@
+html {
+  font-family: sans-serif, Arial;
+  background: linear-gradient(-45deg, #e3ffe7 0%, #d9e7ff 100%) no-repeat;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+main > div {
+  margin-left: 1rem;
+}
+
+.flex-container {
+  display: flex;
+  margin: auto;
+  flex-flow: row wrap;
+}
+
+.profile {
+  text-align: center;
+  flex: 30%
+}
+
+.profile img {
+  display: block;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1rem;
+}
+
+.about {
+  flex: 70%;
+}
+
+.emoji {
+  display: inline-block;
+  margin-right: 0.25rem;
+  font-size: large;
+}
+
+.emoji.md {
+  font-size: medium;
+}
+
+.single-before {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills li {
+  line-height: 2rem;
+  padding-left: 0.25rem;
+  text-indent: 0rem;
+}
+
+.single-before li::before {
+  content: "✔ ";
+  font-size: large;
+  margin-right: 0.25rem;
+}
