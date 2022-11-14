@@ -34,6 +34,136 @@
         <li>Clean code improves maintainability and extensibility, so it matters to me</li>
         <li>Ready to learn: your tech stack can become mine!</li>
       </ul>
+    </div>
+    <div class="projects">
+      <h2>Personal Projects</h2>
+      <div class="flex-container">
+        <section class="project">
+          <h3>FridgePal</h3>
+          <img
+            class="screenshot portrait hover-shadow cursor" 
+            src="./images/fridgepal/fridgepal-overview.png" alt="Laravel Blog Screenshot"
+          >
+          <span class="subtext">Click to view more screenshots</span>
+
+          <div class="modal" data-slideshow-name="fridgepal">
+            <span class="close cursor" onclick="window.slideshowManager.currentSlideshow.closeModal()">&times;</span>
+            <div class="modal-content">
+
+              <div class="slide">
+                <div class="numbertext">1 / 5</div>
+                <img class="portrait" src="./images/fridgepal/fridgepal-overview.png" alt="List of food with color marked expiry dates and types">
+              </div>
+          
+              <div class="slide">
+                <div class="numbertext">2 / 5</div>
+                <img class="portrait" src="./images/fridgepal/fridgepal-notification.png" alt="Daily notification with (nearly) expired food">
+              </div>
+          
+              <div class="slide">
+                <div class="numbertext">3 / 5</div>
+                <img class="portrait" src="./images/fridgepal/fridgepal-food-edit.png" alt="Easily add or edit the contents of your fridge">
+              </div>
+              
+              <div class="slide">
+                <div class="numbertext">4 / 5</div>
+                <img class="portrait" src="./images/fridgepal/fridgepal-settings.png" alt="Change or toggle the daily notification">
+              </div>
+              
+              <div class="slide">
+                <div class="numbertext">5 / 5</div>
+                <img class="portrait" src="./images/fridgepal/fridgepal-recipes.png" alt="Search for recipes on Edamame for cooking inspiration with your fridge contents">
+              </div>
+              
+              <span class="prev" onclick="window.slideshowManager.currentSlideshow.plusSlides(-1)">&#10094;</span>
+              <span class="next" onclick="window.slideshowManager.currentSlideshow.plusSlides(1)">&#10095;</span>
+          
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="description">
+            <p>An app that helps keeping track of the expiry date of your fridge's contents.</p>
+            <p>Features include a configurable daily notification, color-coded exiry dates and a recipe search through Edamame API. </p>
+            <p>Developed in two months during my education at VIVES college</p>
+            <a class="project-button" href="https://github.com/Jadcooma/FridgePal">
+              View on Github
+            </a>
+          </div>
+        </section>
+        
+        <section class="project">
+          <h3>Laravel From Scratch: new features</h3>
+          <img 
+            class="screenshot landscape hover-shadow cursor" 
+            src="./images/laravel-blog/home.png" alt="Laravel Blog Screenshot"
+          >
+
+          <span class="subtext">Click to view more screenshots</span>
+
+          <div class="modal" data-slideshow-name="laravel-blog">
+            <span class="close cursor" onclick="window.slideshowManager.currentSlideshow.closeModal()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="slide">
+                <div class="numbertext">1 / 4</div>
+                <img class="landscape" src="./images/laravel-blog/home.png" alt="Homepage by Jeffrey Way <br> Posts in draft are now hidden until published">
+              </div>
+          
+              <div class="slide">
+                <div class="numbertext">2 / 4</div>
+                <img class="landscape" src="./images/laravel-blog/post-publication-date.png" alt="Posts are now displayed with their publication date">
+              </div>
+          
+              <div class="slide">
+                <div class="numbertext">3 / 4</div>
+                <img class="landscape" src="./images/laravel-blog/posts-status.png" alt="Every post now has its publication status displayed as a badge">
+              </div>
+              
+              <div class="slide">
+                <div class="numbertext">4 / 4</div>
+                <img class="landscape" src="./images/laravel-blog/post-edit.png" alt="The publication status and author of posts are now editable">
+              </div>
+              
+              <span class="prev" onclick="window.slideshowManager.currentSlideshow.plusSlides(-1)">&#10094;</span>
+              <span class="next" onclick="window.slideshowManager.currentSlideshow.plusSlides(1)">&#10095;</span>
+          
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="description">
+            <p>Adding features to a tutorial blog as suggested by the author Jeffrey Way.</p>
+            <p>
+              It's a great way to put what I learned about the framework in practice.
+              It also made me dip my toes into Alpine.js and Tailwind CSS.
+            </p>
+            <p>You can read more about these new features and their progress in the project's readme.</p>
+            <a class="project-button" href="https://github.com/Jadcooma/Laravel-From-Scratch-Blog-Project-Extended">
+              View on Github
+            </a>
+          </div>
+        </section>
+
+        <section class="project">
+          <h3>Published Solutions on Exercism</h3>
+          <a href="https://exercism.org/profiles/Jadcooma">
+            <img class="logo-exercism hover-shadow" src="./images/exercism/exercism-with-logo.svg" alt="Exercism Logo">
+          </a>
+          <span class="subtext">Click to view my profile</span>
+          <div class="description">
+            <p>Solving exercises on Exercism helped me develop more fluency in PHP and Javascript.</p>
+            <p>By publishing solutions, other users can learn from me as I have from them.</p> 
+            <p>You can view my published solutions by visiting my profile.</p>
+          </div>
+        </section>
+      </div>
     </div>    
   </main>
 </body>

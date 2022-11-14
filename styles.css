@@ -4,12 +4,34 @@ html {
 }
 
 main {
-  max-width: 1000px;
+  max-width: 1400px;
   margin: auto;
 }
 
 main > div {
   margin-left: 1rem;
+}
+
+img {
+  display: block;
+  border-radius: 0.50rem;
+}
+
+a.project-button {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0.5rem;
+  color: white;
+  text-decoration: none;
+  background-color: #3399ff;
+}
+
+a.project-button:hover,
+a.project-button:focus {
+  background-color: #0066ff;
 }
 
 .flex-container {
@@ -20,12 +42,11 @@ main > div {
 
 .profile {
   text-align: center;
-  flex: 30%
+  flex: 30%;
 }
 
 .profile img {
-  display: block;
-  width: 150px;
+  width: 120px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 1rem;
@@ -61,4 +82,229 @@ main > div {
   content: "✔ ";
   font-size: large;
   margin-right: 0.25rem;
+}
+
+.project {
+  flex: 50%;
+}
+
+.project:nth-last-child(1) {
+  width: 50%;
+  flex: unset;
+}
+
+.project.info.description {
+  width: 100%;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img.screenshot {
+  display: block;
+  margin: auto;
+}
+
+img.screenshot.landscape {
+  height: 400px;
+}
+
+img.screenshot.portrait{
+  height: 400px;
+}
+
+.logo-exercism {
+  margin: auto;
+  background-color: white;
+  padding: 15px;
+  width: 350px;
+}
+
+.subtext {
+  display: block;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: small;
+  font-weight: bold;
+}
+
+.description {
+  margin: 5px 0px 0px 5px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.slide {
+  display: none;
+}
+
+.slide > img {
+  display: block;
+  margin: auto;
+}
+
+.slide > img.landscape {
+  height: 60vh;
+}
+
+.slide > img.portrait {
+  width: 40vw;
+  max-width: 400px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: darkgray;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+@media (max-width: 1400px) {
+  .project:nth-last-child(1) {
+    flex: 50%;
+  }
+}
+
+@media (max-width: 1080px) {
+  img.screenshot.landscape {
+    height: 25vh;
+  }
+
+  img.screenshot.portrait{
+    height: 25vh;
+  }
+
+  .slide > img.landscape {
+    height: unset;
+    width: 80vw;
+  }
+
+  .slide > img.portrait {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 440px) {
+  html {
+    font-size: small;
+  }
+
+  .about {
+    margin-left: 1rem;
+  }
+
+  img.screenshot.landscape {
+    height: 20vh;
+  }
+
+  img.screenshot.portrait{
+    height: 25vh;
+  }
+
+  .slide > img.landscape {
+    height: unset;
+    width: 80vw;
+  }
+
+  .slide > img.portrait {
+    width: 40vw;
+  }
+
+  .logo-exercism {
+    width: 200px;
+  }
+
+  .numbertext {
+    font-size: 12px;
+  }
+
+  .prev,
+  .next {
+    font-size: 20px;
+  }
 }
